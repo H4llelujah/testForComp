@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body{
+    background-image: url(../img/cosmos-1845140_1920\ 1.png);
+    font-family: Roboto, sans-serif;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    font-weight: 500;
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 25px;
+    line-height: 80%;
+}
+.form_window{
+    width: 389px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    background-color: #171929;
+    border-radius: 27px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    padding: 41px 0;
+}
+
+.form_header{
+    text-align: center;
+    padding: 0 75px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: -38px;
+}
+
+.form_header::after{
+    content: '*Required';
+    display: flex;
+    flex-direction: column;
+    color: #797EA3;
+    font-size: 15px;
+    padding-top: 11px;
+    margin-bottom: 10px;
+}
+
+.input_text{
+    display: flex;
+    flex-direction: column;
+    width: 299px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #797EA3;
+}
+
+.input_text:hover{
+    color:#fff
+}
+
+
+.form_input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    padding: 4px 0px;
+    color: #fff;
+    outline: none;
+
+}
+
+.form_input{
+    color:#fff
+}
+
+.btn{
+    color: rgba(255, 255, 255, 0.7);
+    background: #2C2F47;
+    border-radius: 28px;
+    padding: 11px 40px;
+    border: none;
+    cursor: pointer;
+}
+.line_text{
+    text-decoration: underline;
+}
+
+.required::after{
+    content: '*';
+    color: #3F4363;
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 1px;
+}
+
+.form_textarea{
+    resize: none;
+    width: 299px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    padding: 4px 0px 7px 0;
+    color: #fff;
+    outline: none;
+    max-height: 50px;   
+}
+.addition{
+    font-weight: 300;
+    font-size: 15px;
+    color: #797EA3;
+    padding-top: 11px;
+}
+
+.form_checkbox{
+    display: none;
+}
+.fake_span{
+    display: flex;
+    background: #2C2F47;
+    border-radius: 8px;
+    width: 31px;
+    height: 31px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_checkbox_label{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-height: 900px) {
+    .form_window{
+        gap: 20px;
+    }
+    .form_header{
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 400px){
+    .form_window{
+        width: 300px;
+    }
+    .input_text{
+        width: 250px;
+    }
+    .form_textarea{
+        width: 250px;
+    }
+    .fake_span{
+        width: 25px;
+        height: 25px;
+    }
+    .form_checkbox_label{
+        width: 250px;
+    }
+}
+
+
+
+
+
+
+
+

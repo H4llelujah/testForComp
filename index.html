@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <h1 class="header">Hello</h1>
+        <form action="#" class="form_window">
+            <h3 class="form_header">For business enquiries please use the form below
+                <span class="addition"></span>
+            </h3>
+            <label class="input_text">
+                Name *
+                <input class="form_input" type="text" name="" id="name" required>
+            </label>
+            <label class="input_text">
+                Company *
+                <input class="form_input" type="text" name="" id="company" required>
+            </label>
+            <label class="input_text">
+                E-mail *
+                <input class="form_input" type="text" name="" id="E-mail" required>
+            </label>
+            <label for="phone" class="input_text">Phone 
+                <input class="form_input active" type="text" name="" id="phone">
+            </label>
+            <label class="input_text inactive">Subject 
+                <input class="form_input inactive" type="text" name="" id="subject">
+            </label>
+            <label class="input_text">
+                Message *
+                <textarea class="form_textarea" name="message" id="message" cols="30" rows="2">321</textarea>
+            </label>
+            <label for="check" class="form_checkbox_label">
+                <span class="fake_span">
+                    <svg class="hidden" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.7" d="M14.5607 0.429557C13.9749 -0.143186 13.0254 -0.143186 12.4396 0.429557L5.24994 7.45867L2.56038 4.82963C1.97536 4.25689 1.02434 4.25689 0.439323 4.82963C-0.146441 5.40237 -0.146441 6.33079 0.439323 6.90353L4.18942 10.5703C4.48192 10.857 4.86593 11 5.24994 11C5.63395 11 6.01796 10.857 6.31047 10.5703L14.5607 2.50346C15.1464 1.93072 15.1464 1.0023 14.5607 0.429557Z" fill="white"/>
+                        </svg>  
+                </span>
+                <div>
+                    <input class="form_checkbox"  type="checkbox" id="check">I accept  
+                    <a href="#" class="line_text">Terms and Privacy Policy</a>
+                </div>
+            </label>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </main>
+    <script src="js/checkbox_script.js"></script>
+    <script src="js/validate.js"></script>
+    
+</body>
+</html>
